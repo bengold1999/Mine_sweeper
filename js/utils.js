@@ -91,8 +91,9 @@ function getEmptyPos() {
     for (var i = 0; i < gBoard.length; i++) {
         for (var j = 0; j < gBoard[0].length; j++) {
             const currCell = gBoard[i][j]
-            if (currCell === currCell.isMine) {
-                
+            if (currCell !== currCell.isMine) {
+                 emptyPoss.push({ i, j })
+            
             }
         }
     }

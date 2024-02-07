@@ -36,6 +36,7 @@ td{
     
     color: black;
     font-size: 40px;
+    background-color: aliceblue;
     
     
 
@@ -54,12 +55,21 @@ td{
     transform: translate(2px, -2px); 
  
 }
- 
- 
- 
- 
-/* .show{
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+.marked{
+       
+    color: green;
+    font-size: 40px;
+    background-color: aliceblue; 
 }
-
+ 
+.gameover{
+    margin: auto;
+    font-size: 30px;
+    top: 100px;
+    left: 50px;
+    background-color: rgb(234, 34, 34);
+    width: 200px;
+    height: 100px;
+    display:none;
+    
+}
