@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+}
+h1{
+    font-size: 100px;
+    font-family: fantasy;
+    font-style: italic;
+}
+
+table{
+    border: 20px solid rgb(0, 0, 0);
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(84, 84, 84);
+   
+    
+}
+
+td{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    border: 30px groove black;
+    background-color: rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
+    
+    
+
+
+}
+
+.show{
+    
+    color: black;
+    font-size: 40px;
+    
+    
+
+}
+
+
+.smile{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    cursor: pointer;
+    margin-top: 10%;
+    font-size: 30px;
+}
+.board td:hover{
+    transform: translate(2px, -2px); 
+ 
+}
+ 
+ 
+ 
+ 
+/* .show{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
