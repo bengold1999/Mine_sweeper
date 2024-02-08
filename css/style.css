@@ -1,10 +1,25 @@
 body{
     text-align: center;
+    background-image:url("wheels.png");
+    margin: auto;
+    
+   
 }
 h1{
-    font-size: 100px;
+    font-size: 70px;
     font-family: fantasy;
     font-style: italic;
+    color: aliceblue;
+    background-color: black;
+    width: 600px;
+    margin: auto;
+}
+h2{
+    border: 1px groove black;
+    width: 100px;
+    background-color: aliceblue;
+    
+    margin: auto;
 }
 
 table{
@@ -23,9 +38,9 @@ td{
     margin: auto;
     text-align: center;
     cursor: pointer;
-    border: 30px groove black;
-    background-color: rgb(153, 153, 153);
-    color: rgb(153, 153, 153);
+    border: 10px groove black;
+    background-color: rgb(14, 13, 13);
+    color: rgb(14, 13, 13);
     
 
 
@@ -45,14 +60,15 @@ td{
 .restart{
     height: 50px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .smile{
-    width: 50px;
-    height: 50px;
-    background-color: brown;
+    width: 80px;
+    height: 80px;
+    background-color: black;
     cursor: pointer;
-    margin-top: 10%;
+    margin-bottom:10px ;
     font-size: 30px;
 }
 .board td:hover{
@@ -61,8 +77,8 @@ td{
 }
 .marked{
        
-    color: green;
-    font-size: 40px;
+    color: rgb(255, 0, 0);
+    
     background-color: aliceblue; 
 }
  
@@ -91,7 +107,12 @@ td{
 
 .btn{
    width: 200px;
-    height: 200px;
+   height: 100px;
+    border: 10px groove black;
+    border-radius: 10%;
+    cursor: pointer;
+    margin: 1%;
+    text-align: center;
     
 
 }
