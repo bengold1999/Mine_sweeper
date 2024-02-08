@@ -27,7 +27,6 @@ td{
     background-color: rgb(153, 153, 153);
     color: rgb(153, 153, 153);
     
-    
 
 
 }
@@ -35,13 +34,18 @@ td{
 .show{
     
     color: black;
-    font-size: 40px;
+    font-size: 20px;
+    font-weight: bold;
     background-color: aliceblue;
     
     
 
 }
 
+.restart{
+    height: 50px;
+    font-size: 30px;
+}
 
 .smile{
     width: 50px;
@@ -86,8 +90,8 @@ td{
 }
 
 .btn{
-    width: 30%;
-    height: 300%;
+   width: 200px;
+    height: 200px;
     
 
 }
