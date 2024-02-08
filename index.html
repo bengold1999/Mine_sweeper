@@ -10,17 +10,22 @@
 <body onload="onInit()">
     <h1>Mine Sweeper 
     </h1>
-    <h2>LIVES LEFT</h2>
+    <button class="btn" onclick="sizeLevel(4,2)">Beginner</button>
+    <button class="btn" onclick="sizeLevel(8,14)">Intermediate</button>
+    <button class="btn" onclick="sizeLevel(12,32)">Expert</button>
+    <h2><span></span> LIVES LEFT</h2>
     
-       <div class="gameover"><h4> GAME OVER!</h4></div>
-
     
+    
+    <div class="gameover"><h4> GAME OVER!</h4></div>
+    <div class="try"><h4> Hey, remember where the mines are!</h4></div>
+       <button class="smile" onclick="onPlay()">😀</button>
     <table>
         <tbody class="board">
 
         </tbody>
     </table>
-    <button class="smile" onclick="onInit()">😀</button>
+    <button class="restart" onclick="onInit()">RESTART</button>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
 </body>

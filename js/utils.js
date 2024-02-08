@@ -92,8 +92,8 @@ function getEmptyPos() {
         for (var j = 0; j < gBoard[0].length; j++) {
             const currCell = gBoard[i][j]
             if (currCell !== currCell.isMine) {
-                 emptyPoss.push({ i, j })
-            
+                emptyPoss.push({ i, j })
+
             }
         }
     }
@@ -164,4 +164,20 @@ function copyMat(mat) {
         }
     }
     return newMat
+}
+
+function showAllMines() {
+    for (var i = 0; i < gLevel.SIZE; i++) {
+        for (var j = 0; j < gLevel.SIZE; j++){
+            const cell = gBoard[i][j]
+        if (cell.isMine) {
+            var elCell = document.querySelector(`[data-i="${i}"][data-j="${j}"]`)
+            elCell.classList.add('show')
+            
+            
+
+
+        }
+    }
+}
 }
