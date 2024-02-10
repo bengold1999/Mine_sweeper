@@ -1,7 +1,9 @@
 body{
     text-align: center;
     background-image:url("wheels.png");
+    background-size: 10px;
     margin: auto;
+    font-family: fantasy;
     
    
 }
@@ -15,6 +17,15 @@ h1{
     margin: auto;
 }
 h2{
+    border: 1px groove black;
+    width: 200px;
+    
+    background-color: aliceblue;
+    
+    margin: auto;
+}
+
+.timer{
     border: 1px groove black;
     width: 100px;
     background-color: aliceblue;
@@ -33,15 +44,15 @@ table{
 }
 
 td{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: auto;
     text-align: center;
     cursor: pointer;
     border: 10px groove black;
     background-color: rgb(14, 13, 13);
     color: rgb(14, 13, 13);
-    
+   
 
 
 }
@@ -58,9 +69,16 @@ td{
 }
 
 .restart{
-    height: 50px;
-    font-size: 30px;
+    width: 200px;
+   height: 100px;
+    border: 10px groove black;
+    border-radius: 10%;
     cursor: pointer;
+    margin: 1%;
+    font-size: larger;
+    
+    font-family: fantasy;
+    transition: 0.3s;
 }
 
 .smile{
@@ -71,6 +89,16 @@ td{
     margin-bottom:10px ;
     font-size: 30px;
 }
+.hints{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    cursor: pointer;
+    margin-bottom:10px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
 .board td:hover{
     transform: translate(2px, -2px); 
  
@@ -84,18 +112,18 @@ td{
  
 .gameover{
     margin: auto;
-    font-size: 30px;
-    top: 100px;
-    left: 50px;
+    font-size: 50px;
+    margin: auto;
+    top: 370px;
     background-color: rgb(234, 34, 34);
-    width: 200px;
+    width: 150px;
     height: 100px;
     display:none;
     
 }
 .try{
     margin: auto;
-    font-size: 30px;
+    font-size: 25px;
     top: 100px;
     left: 50px;
     background-color: rgb(194, 234, 34);
@@ -112,7 +140,15 @@ td{
     border-radius: 10%;
     cursor: pointer;
     margin: 1%;
-    text-align: center;
+    font-size: larger;
     
+    font-family: fantasy;
+    transition: 0.3s;
 
 }
+
+.btn:hover{
+    transform: translate(2px, -2px); 
+    transition: 0.3s;
+}
+

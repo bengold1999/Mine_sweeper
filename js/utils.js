@@ -120,27 +120,30 @@ function countEmptyPosAround(board, rowIdx, colIdx) {
 }
 
 // Highlight empty positions around object
-function highlightEmptyPosAround(board, rowIdx, colIdx) {
+function shownCells(board, rowIdx, colIdx) {
     for (var i = rowIdx - 1; i <= rowIdx + 1; i++) {
         if (i < 0 || i >= board.length) continue
         for (var j = colIdx - 1; j <= colIdx + 1; j++) {
             if (i === rowIdx && j === colIdx) continue
             if (j < 0 || j >= board[0].length) continue
-            const currCell = board[i][j]
-            if (currCell.isSeat && !currCell.isBooked) {
-                const elSeat = document.querySelector(`[data-i="${i}"][data-j="${j}"]`)
-                elSeat.classList.add('neighbors')
+            const cell = board[i][j]
+                const elCell = document.querySelector(`[data-i="${i}"][data-j="${j}"]`)
+                elCell.classList.add('show')
             }
         }
+    setTimeout(() => {
+        removeShow(gBoard)  
+              
+    }, 1000);
     }
-}
+
 
 // Remove highlight from empty positions around object
-function removehighlight(board) {
+function removeShow(board) {
     for (var i = 0; i < board.length; i++) {
         for (var j = 0; j < board[i].length; j++) {
-            const elSeat = document.querySelector(`[data-i="${i}"][data-j="${j}"]`)
-            elSeat.classList.remove('neighbors')
+            const elCell = document.querySelector(`[data-i="${i}"][data-j="${j}"]`)
+            elCell.classList.remove('show')
         }
 
     }
